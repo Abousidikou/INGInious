@@ -4,7 +4,7 @@
 # This file is part of INGInious. See the LICENSE and the COPYRIGHTS files for
 # more information about the licensing of this file.
 #
-# Original version at https://github.com/UCL-INGI/INGInious/blob/v0.4/utils/task_tester/inginious-test-task
+# Original version at https://github.com/Abousidikou/INGInious/blob/v0.4/utils/task_tester/inginious-test-task
 
 import importlib
 import argparse
@@ -115,7 +115,7 @@ def job_done_callback(result, filename, inputfiles, data):
 
 
     # TODO : This will be reworked with the new tagging system
-    # See https://github.com/UCL-INGI/INGInious/issues/874
+    # See https://github.com/Abousidikou/INGInious/issues/874
 
     """
     if 'stderr' in result and result['stderr']:

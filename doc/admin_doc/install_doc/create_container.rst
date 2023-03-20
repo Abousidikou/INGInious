@@ -109,6 +109,6 @@ Of course, if you rebuilt your images, you will have to restart inginious-webapp
 Share what you created
 ----------------------
 
-If you created a Dockerfile for INGInious, feel free to make a pull request in the repository associated: https://github.com/UCL-INGI/INGInious-containers
+If you created a Dockerfile for INGInious, feel free to make a pull request in the repository associated: https://github.com/Abousidikou/INGInious-containers
 
 .. _Docker: https://www.docker.com/

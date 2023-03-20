@@ -373,7 +373,7 @@ class Installer:
             self._display_question("Demonstration tasks can be downloaded to let you discover INGInious.")
             if self._ask_boolean("Would you like to download them ?", True):
                 try:
-                    self._retrieve_and_extract_tarball("https://api.github.com/repos/UCL-INGI/INGInious-demo-tasks/tarball", task_directory)
+                    self._retrieve_and_extract_tarball("https://api.github.com/repos/Abousidikou/INGInious-demo-tasks/tarball", task_directory)
                     self._display_info("Successfully downloaded and copied demonstration tasks.")
                 except Exception as e:
                     self._display_error("An error occurred while copying the directory: %s" % str(e))
@@ -422,11 +422,11 @@ class Installer:
             with tempfile.TemporaryDirectory() as tmpdirname:
                 self._display_info("Downloading the base container source directory...")
                 if "dev" in __version__:
-                    tarball_url = "https://api.github.com/repos/UCL-INGI/INGInious/tarball"
+                    tarball_url = "https://api.github.com/repos/Abousidikou/INGInious/tarball"
                     containers_version = "dev (github branch master)"
                     dev = True
                 else:
-                    tarball_url = "https://api.github.com/repos/UCL-INGI/INGInious/tarball/v" + __version__
+                    tarball_url = "https://api.github.com/repos/Abousidikou/INGInious/tarball/v" + __version__
                     containers_version = __version__
                     dev = False
                 self._display_info("Downloading containers for version:" + containers_version)
@@ -442,7 +442,7 @@ class Installer:
             with tempfile.TemporaryDirectory() as tmpdirname:
                 self._display_info("Downloading the other containers source directory...")
                 self._retrieve_and_extract_tarball(
-                    "https://api.github.com/repos/UCL-INGI/INGInious-containers/tarball", tmpdirname)
+                    "https://api.github.com/repos/Abousidikou/INGInious-containers/tarball", tmpdirname)
                 # As the add_container function recursively calls itself before adding the entry,
                 # the wanted build order.
                 todo = ["ingi/inginious-c-base", "ingi/inginious-c-default"]

@@ -676,7 +676,7 @@ An optional web terminal can be used with INGInious to load the remote SSH debug
 To install this tool :
 ::
 
-    $ git clone https://github.com/UCL-INGI/INGInious-xterm
+    $ git clone https://github.com/Abousidikou/INGInious-xterm
     $ cd INGInious-xterm && npm install
 
 You can then launch the tool by running:
@@ -690,5 +690,5 @@ the debug paramaters on the local (see :ref:`ConfigReference`) or remote (see :r
 To make the INGInious frontend aware of that application, update your configuration file by setting the ``webterm``
 field to ``http://bind_hostname:bind_port`` (see :ref:`ConfigReference`).
 
-For more information on this tool, please see `INGInious-xterm <https://github.com/UCL-INGI/INGInious-xterm>`_. Please
+For more information on this tool, please see `INGInious-xterm <https://github.com/Abousidikou/INGInious-xterm>`_. Please
 note that INGInious-xterm must be launched using SSL if the frontend is launched using SSL.
