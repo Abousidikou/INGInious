@@ -161,9 +161,9 @@ class BaseTaskPage(object):
             return handle_course_unavailable(self.cp.app.get_homepath(), self.template_helper, self.user_manager, course)
         ###  My code
         
-        return Response(content_type='application/json', response=json.dumps({
-                        'status': "error",  "title": _("Error"), "text": _("Internal Papa error "+course.get_id()+" "+course.get_tutors())
-                    })) 
+        # return Response(content_type='application/json', response=json.dumps({
+        #                 'status': "error",  "title": _("Error"), "text": _("Internal Papa error "+course.get_id()+" "+course.get_tutors())
+        #             })) 
         
         
         ### end my code
