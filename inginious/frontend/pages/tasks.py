@@ -159,7 +159,15 @@ class BaseTaskPage(object):
         course = self.course_factory.get_course(courseid)
         if not self.user_manager.course_is_open_to_user(course, username, isLTI):
             return handle_course_unavailable(self.cp.app.get_homepath(), self.template_helper, self.user_manager, course)
-
+        ###  My code
+        
+        return Response(content_type='application/json', response=json.dumps({
+                    "status": username,
+                    "text": course
+                }))
+        
+        
+        #### end my code
         is_staff = self.user_manager.has_staff_rights_on_course(course, username)
         is_admin = self.user_manager.has_admin_rights_on_course(course, username)
 
