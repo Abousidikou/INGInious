@@ -162,7 +162,7 @@ class BaseTaskPage(object):
         ###  My code
         
         return Response(content_type='application/json', response=json.dumps({
-                        'status': "error",  "title": _("Error"), "text": _("Internal Papa error "+course.get_id())
+                        'status': "error",  "title": _("Error"), "text": _("Internal Papa error "+course.get_id()+" "+course.get_tutors())
                     })) 
         
         
