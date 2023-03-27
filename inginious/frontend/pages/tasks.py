@@ -162,12 +162,11 @@ class BaseTaskPage(object):
         ###  My code
         
         return Response(content_type='application/json', response=json.dumps({
-                    "status": username,
-                    "text": course
-                }))
+                        'status': "error",  "title": _("Error"), "text": _("Internal Papa error "+course.get_id())
+                    })) 
         
         
-        #### end my code
+        ### end my code
         is_staff = self.user_manager.has_staff_rights_on_course(course, username)
         is_admin = self.user_manager.has_admin_rights_on_course(course, username)
 
